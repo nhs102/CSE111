@@ -1,0 +1,69 @@
+import tkinter as tk
+
+
+def main():
+    # The width and height of the scene window.
+    width = 800
+    height = 500
+
+    # Create the Tk root object.
+    root = tk.Tk()
+    root.geometry(f"{width}x{height}")
+
+    # Create a Frame object.
+    frame = tk.Frame(root)
+    frame.master.title("Scene")
+    frame.pack(fill=tk.BOTH, expand=1)
+
+    # Create a canvas object that will draw into the frame.
+    canvas = tk.Canvas(frame)
+    canvas.pack(fill=tk.BOTH, expand=1)
+
+    # Call the draw_scene function.
+    draw_scene(canvas, 0, 0, width-1, height-1)
+
+    root.mainloop()
+
+
+def draw_scene(canvas, scene_left, scene_top, scene_right, scene_bottom):
+    """Draw a scene in the canvas. scene_left, scene_top,
+    scene_right, and scene_bottom contain the extent in
+    pixels of the region where the scene should be drawn.
+    Parameters
+        scene_left: left side of the region; less than scene_right
+        scene_top: top of the region; less than scene_bottom
+        scene_right: right side of the region
+        scene_bottom: bottom of the region
+    Return: nothing
+
+    If needed, the width and height of the
+    region can be calculated like this:
+    scene_width = scene_right - scene_left + 1
+    scene_height = scene_bottom - scene_top + 1
+    """
+    # Call your functions here, such as draw_sky, draw_ground,
+    # draw_snowman, draw_tree, draw_shrub, etc.
+
+
+
+def draw_house(canvas, house_left, house_bottom):
+
+def draw_bird(canvas, bird_center, bird_top):
+
+def draw_pebble(canvas, pebble_left, pebble_top, pebble_radius):
+
+def draw_picket(canvas, picket_left, picket_bottom):
+
+def draw_grass_blade(canvas, blade_left, blade_top, blade_height):
+
+
+# Define more functions here, like draw_sky, draw_ground,
+# draw_cloud, draw_tree, draw_kite, draw_snowflake, etc.
+
+
+
+
+
+# Call the main function so that
+# this program will start executing.
+main()
